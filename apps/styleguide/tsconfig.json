@@ -14,6 +14,9 @@
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "name": "typescript-plugin-css-modules"
       }
     ],
     "types": ["jest", "node"]
