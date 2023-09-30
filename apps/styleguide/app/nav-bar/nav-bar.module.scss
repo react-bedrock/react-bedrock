@@ -1,0 +1,22 @@
+.nav-bar {
+  display: flex;
+  min-height: 60px;
+  background-color: aqua;
+  align-items: center;
+}
+
+.nav-bar-title {
+  padding: 0px 8px;
+  margin: 0;
+}
+
+.nav-bar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar-item {
+  display: inline;
+  margin: 8px;
+}
