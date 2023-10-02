@@ -20,7 +20,7 @@ export function Button(props: ButtonProps) {
       className={`
         ${styles.base}
         ${styles[`${color}-${variant}`]}
-        ${variant === "outlined" ? styles[variant] : ""}
+        ${styles[variant]}
         ${styles[size]}
         ${pill ? styles.pill : ""}`}>
       {children}

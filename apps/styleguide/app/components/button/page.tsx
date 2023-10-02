@@ -8,21 +8,19 @@ type ButtonsType = Array<{
 
 const buttons: ButtonsType = [
   {
-    title: "Variant",
+    title: "Size",
     buttonProps: [
       {
-        variant: "text",
-        color: "secondary",
-        children: "Secondary Text Button",
+        size: "small",
+        children: "Small Primary Button"
       },
       {
-        color: "secondary",
-        children: "Secondary Contained Button",
+        size: "medium",
+        children: "Medium Primary Button"
       },
       {
-        variant: "outlined",
-        color: "secondary",
-        children: "Secondary Outlined Button",
+        size: "large",
+        children: "Large Primary Button"
       }
     ],
   },
@@ -43,19 +41,42 @@ const buttons: ButtonsType = [
     ],
   },
   {
-    title: "Size",
+    title: "Outlined",
     buttonProps: [
       {
-        size: "small",
-        children: "Small Primary Button"
+        variant: "outlined",
+        color: "primary",
+        children: "Primary Outlined Button",
       },
       {
-        size: "medium",
-        children: "Medium Primary Button"
+        variant: "outlined",
+        color: "secondary",
+        children: "Secondary Outlined Button",
       },
       {
-        size: "large",
-        children: "Large Primary Button"
+        variant: "outlined",
+        color: "accent",
+        children: "Accent Outlined Button",
+      }
+    ],
+  },
+  {
+    title: "Text",
+    buttonProps: [
+      {
+        variant: "text",
+        color: "primary",
+        children: "Primary Text Button",
+      },
+      {
+        variant: "text",
+        color: "secondary",
+        children: "Secondary Text Button",
+      },
+      {
+        variant: "text",
+        color: "accent",
+        children: "Accent Text Button",
       }
     ],
   },
