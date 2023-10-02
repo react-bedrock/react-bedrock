@@ -26,6 +26,7 @@ $shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   border-radius: 0.25rem;
   width: fit-content;
   background-color: inherit;
+  border: none;
 }
 
 .base:hover {
@@ -99,11 +100,17 @@ $shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
 .secondary-outlined:hover {
   border-color: $secondary-hover-color;
+  color: $secondary-hover-color;
 }
 
 .accent-outlined {
   border-color: $accent-color;
   color: $accent-color;
+}
+
+.accent-outlined:hover {
+  border-color: $accent-hover-color;
+  color: $accent-hover-color;
 }
 
 /*** text ***/
