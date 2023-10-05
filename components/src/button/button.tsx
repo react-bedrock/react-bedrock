@@ -16,11 +16,15 @@ export function Button(props: ButtonProps) {
   const { children, variant = 'contained', size = 'medium', color = 'primary', pill = false, ...rest } = props;
 
   function getStyles(): string {
-    return styles.base.concat(
+    const styleStrings = [
+      styles.base,
       styles[`${color}-${variant}`],
       styles[variant],
       styles[size],
-      pill ? styles.pill : "");
+      pill ? styles.pill : ""
+    ]
+
+    return styleStrings.join(" ");
   }
 
   return (
