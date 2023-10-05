@@ -15,16 +15,19 @@ export type ButtonProps = HtmlHTMLAttributes<HTMLButtonElement> & {
 export function Button(props: ButtonProps) {
   const { children, variant = 'contained', size = 'medium', color = 'primary', pill = false, ...rest } = props;
 
+  function getStyles(): string {
+    return styles.base.concat(
+      styles[`${color}-${variant}`],
+      styles[variant],
+      styles[size],
+      pill ? styles.pill : "");
+  }
+
   return (
     <button
-      className={`
-        ${styles.base}
-        ${styles[`${color}-${variant}`]}
-        ${styles[variant]}
-        ${styles[size]}
-        ${pill ? styles.pill : ""}`}
+      className={getStyles()}
       {...rest}>
-      {children}
+        {children}
     </button>
   ) 
 }
