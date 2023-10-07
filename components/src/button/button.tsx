@@ -13,17 +13,25 @@ export type ButtonProps = HtmlHTMLAttributes<HTMLButtonElement> & {
 }
 
 export function Button(props: ButtonProps) {
-  const { children, variant = 'contained', size = 'medium', color = 'primary', pill = false } = props;
+  const { children, variant = 'contained', size = 'medium', color = 'primary', pill = false, ...rest } = props;
+
+  function getStyles(): string {
+    const styleStrings = [
+      styles.base,
+      styles[`${color}-${variant}`],
+      styles[variant],
+      styles[size],
+      pill ? styles.pill : ""
+    ]
+
+    return styleStrings.join(" ");
+  }
 
   return (
-    <button 
-      className={`
-        ${styles.base}
-        ${styles[`${color}-${variant}`]}
-        ${styles[variant]}
-        ${styles[size]}
-        ${pill ? styles.pill : ""}`}>
-      {children}
+    <button
+      className={getStyles()}
+      {...rest}>
+        {children}
     </button>
   ) 
 }

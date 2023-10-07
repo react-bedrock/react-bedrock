@@ -1,115 +1,52 @@
-import { Button, ButtonProps } from "@react-bedrock/components"
+import { Button } from "@react-bedrock/components"
 import styles from "./page.module.scss"
+import { PropsWithChildren } from "react"
 
-type ButtonsType = Array<{
-  title: string,
-  buttonProps: Array<ButtonProps>
-}>;
+type ButtonContainerProps = {
+  title: string
+}
 
-const buttons: ButtonsType = [
-  {
-    title: "Size",
-    buttonProps: [
-      {
-        size: "small",
-        children: "Small Primary Button"
-      },
-      {
-        size: "medium",
-        children: "Medium Primary Button"
-      },
-      {
-        size: "large",
-        children: "Large Primary Button"
-      }
-    ],
-  },
-  {
-    title: "Color",
-    buttonProps: [
-      {
-        children: "Primary Button"
-      },
-      {
-        color: "secondary",
-        children: "Secondary Button"
-      },
-      {
-        color: "accent",
-        children: "Accent Button"
-      }
-    ],
-  },
-  {
-    title: "Outlined",
-    buttonProps: [
-      {
-        variant: "outlined",
-        color: "primary",
-        children: "Primary Outlined Button",
-      },
-      {
-        variant: "outlined",
-        color: "secondary",
-        children: "Secondary Outlined Button",
-      },
-      {
-        variant: "outlined",
-        color: "accent",
-        children: "Accent Outlined Button",
-      }
-    ],
-  },
-  {
-    title: "Text",
-    buttonProps: [
-      {
-        variant: "text",
-        color: "primary",
-        children: "Primary Text Button",
-      },
-      {
-        variant: "text",
-        color: "secondary",
-        children: "Secondary Text Button",
-      },
-      {
-        variant: "text",
-        color: "accent",
-        children: "Accent Text Button",
-      }
-    ],
-  },
-  {
-    title: "Pill",
-    buttonProps: [
-      {
-        children: "Button"
-      },
-      {
-        children: "Pill Button",
-        pill: true
-      }
-    ]
-  }
-]
+function ButtonContainer({title, children}: PropsWithChildren<ButtonContainerProps>) {
+  return(
+    <div>
+      <h2>{title}</h2>
+      <div  className={styles.row}>
+      <div className={styles["button-container"]}>
+        {children}
+      </div>
+      </div>
+    </div>
+  )
+}
 
 export default function Page() {
   return (
     <div className={styles.page}>
       <div className={styles["row-container"]}>
-        {buttons.map((row, index) => (
-          <div key={`row-${index}`}>
-            <h2>{row.title}</h2>
-            <div  className={styles.row}>
-            <div className={styles["button-container"]}>
-              {row.buttonProps.map((button, innerIndex) => (
-                <Button key={`row-${index}-button-${innerIndex}`} {...button}/>
-              ))}
-            </div>
-            </div>
-          </div>
-        ))}
+        <ButtonContainer title="Size">
+          <Button size="small">Small Primary Button</Button>
+          <Button size="medium">Medium Primary Button</Button>
+          <Button size="large">Large Primary Button</Button>
+        </ButtonContainer>
+        <ButtonContainer title="Color">
+          <Button color="primary">Primary Button</Button>
+          <Button color="secondary">Secondary Button</Button>
+          <Button color="accent">Accent Button</Button>
+        </ButtonContainer>
+        <ButtonContainer title="Outlined">
+          <Button color="primary" variant="outlined">Primary Outlined Button</Button>
+          <Button color="secondary" variant="outlined">Secondary Outlined Button</Button>
+          <Button color="accent" variant="outlined">Accent Outlined Button</Button>
+        </ButtonContainer>
+        <ButtonContainer title="Text">
+          <Button color="primary" variant="text">Primary Outlined Button</Button>
+          <Button color="secondary" variant="text">Secondary Outlined Button</Button>
+          <Button color="accent" variant="text">Accent Outlined Button</Button>
+        </ButtonContainer>
+        <ButtonContainer title="Pill">
+          <Button>Primary Button</Button>
+          <Button pill>Primary Pill Button</Button>
+        </ButtonContainer>
       </div>
     </div>
   )
