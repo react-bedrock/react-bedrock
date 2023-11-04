@@ -11,9 +11,9 @@ function ButtonContainer({title, children}: PropsWithChildren<ButtonContainerPro
     <div>
       <h2>{title}</h2>
       <div  className={styles.row}>
-      <div className={styles["button-container"]}>
-        {children}
-      </div>
+        <div className={styles["button-container"]}>
+          {children}
+        </div>
       </div>
     </div>
   )
