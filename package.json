@@ -2,7 +2,9 @@
   "name": "@react-bedrock/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "npx nx run styleguide:serve --dev=true"
+  },
   "private": true,
   "dependencies": {
     "@nx/next": "16.9.1",
