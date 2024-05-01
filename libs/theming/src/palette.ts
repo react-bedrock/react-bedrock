@@ -1,22 +1,31 @@
-import deepmerge from "../utils/deep-merge";
-import { Color, blue, green, grey, lightBlue, orange, purple, red } from "./colors";
+import deepmerge from '../utils/deep-merge';
+import {
+  Color,
+  blue,
+  green,
+  grey,
+  lightBlue,
+  orange,
+  purple,
+  red,
+} from './colors';
 
 export type CommonColors = {
   black: string;
   white: string;
-}
+};
 
 const common = {
   black: '#000',
-  white: '#fff'
-}
+  white: '#fff',
+};
 
 export type SimplePaletteColorOptions = {
   light?: string;
   main: string;
   dark?: string;
   contrastText?: string;
-}
+};
 
 export type PaletteColor = SimplePaletteColorOptions | Partial<Color>;
 
@@ -60,7 +69,7 @@ export type Palatte = {
   text: TypeText;
   action: TypeAction;
   background: TypeBackground;
-}
+};
 
 export type PaletteOptions = {
   common?: Partial<CommonColors>;
@@ -75,7 +84,7 @@ export type PaletteOptions = {
   text?: Partial<TypeText>;
   action?: Partial<TypeAction>;
   background?: Partial<TypeBackground>;
-}
+};
 
 export const light = {
   // The colors used to style the text.
@@ -112,13 +121,13 @@ export const light = {
     focusOpacity: 0.12,
     activatedOpacity: 0.12,
   },
-}
+};
 
 export const dark = {
   text: {
     primary: common.white,
     secondary: 'rgba(255, 255, 255, 0.7)',
-    disabled: 'rgba(255, 255, 255, 0.5)'
+    disabled: 'rgba(255, 255, 255, 0.5)',
   },
   background: {
     paper: '#121212',
@@ -242,7 +251,6 @@ export default function createPalatte(palette: PaletteOptions): Palatte {
     warning = getDefaultWarning(mode),
     ...other
   } = palette;
-  
 
   const palatteOutput: Palatte = deepmerge<Palatte>(
     {
@@ -255,7 +263,7 @@ export default function createPalatte(palette: PaletteOptions): Palatte {
       success,
       warning,
       grey,
-      ...modes[mode]
+      ...modes[mode],
     },
     other
   );
