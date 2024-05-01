@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "../theming/theme";
+@import "libs/theming/src/theme";
 
 /*** colors ***/
 $text-color: #e5e5e5;
