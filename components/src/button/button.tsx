@@ -13,7 +13,14 @@ export type ButtonProps = HtmlHTMLAttributes<HTMLButtonElement> & {
 }
 
 export function Button(props: ButtonProps) {
-  const { children, variant = 'contained', size = 'medium', color = 'primary', pill = false, ...rest } = props;
+  const {
+    children,
+    variant = 'contained',
+    size = 'medium',
+    color = 'primary',
+    pill = false,
+    ...rest
+  } = props;
 
   function getStyles(): string {
     const styleStrings = [

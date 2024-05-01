@@ -1,0 +1,15 @@
+@use "sass:map";
+@import "./default-light-theme";
+
+$default-theme: (
+  "light-theme": $default-light-theme
+);
+
+$theme: $default-theme;
+
+@if global-variable-exists($name: "configure-theme") {
+  $theme: deep-merge(
+    $default-theme,
+    $configure-theme
+  );
+}

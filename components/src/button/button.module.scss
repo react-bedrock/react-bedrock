@@ -1,3 +1,6 @@
+@use "sass:map";
+@import "../theming/theme";
+
 /*** colors ***/
 $text-color: #E5E5E5;
 /* primary */
@@ -48,12 +51,12 @@ $shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
 /*** contained ***/
 .contained {
-  box-shadow: $shadow-sm;
+  box-shadow: map.get($theme, "light-theme", "shadow-sm");
 }
 
 .primary-contained {
   background-color: $primary-background-color;
-  color: $primary-text-color;
+  color: map.get($theme, "light-theme", "text-color");
 }
 
 .primary-contained:hover {
