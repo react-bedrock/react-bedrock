@@ -1,8 +1,8 @@
 /*** colors ***/
-$text-color: #E5E5E5;
+$text-color: #e5e5e5;
 /* primary */
 $primary-text-color: $text-color;
-$primary-background-color: 	rgb(114, 76, 157);
+$primary-background-color: rgb(114, 76, 157);
 $primary-hover-background-color: rgb(148, 115, 185);
 $primary-hover-color: rgb(190, 167, 217);
 /* secondary */
@@ -19,10 +19,9 @@ $accent-hover-color: $primary-hover-color;
 /*** shadow ***/
 $shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 
-
 .base {
   font-size: 0.875rem;
-  font-weight:600;
+  font-weight: 600;
   border-radius: 0.25rem;
   width: fit-content;
   background-color: inherit;

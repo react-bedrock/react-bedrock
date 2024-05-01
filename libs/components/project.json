@@ -1,7 +1,7 @@
 {
   "name": "components",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "components/src",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/components/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -9,23 +9,23 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["components/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/components/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "build": {
       "executor": "@nx/rollup:rollup",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/components",
-        "tsConfig": "components/tsconfig.lib.json",
-        "project": "components/package.json",
-        "entryFile": "components/src/index.ts",
+        "outputPath": "dist/libs/components",
+        "tsConfig": "libs/components/tsconfig.lib.json",
+        "project": "libs/components/package.json",
+        "entryFile": "libs/components/src/index.ts",
         "external": ["react", "react-dom", "react/jsx-runtime"],
         "rollupConfig": "@nx/react/plugins/bundle-rollup",
         "compiler": "babel",
         "assets": [
           {
-            "glob": "components/README.md",
+            "glob": "libs/components/README.md",
             "input": ".",
             "output": "."
           }
@@ -36,7 +36,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "components/jest.config.ts",
+        "jestConfig": "libs/components/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
