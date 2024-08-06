@@ -11,7 +11,14 @@
         "outputPath": "dist/libs/theming",
         "main": "libs/theming/src/index.ts",
         "tsConfig": "libs/theming/tsconfig.lib.json",
-        "assets": ["libs/theming/*.md"]
+        "assets": [
+          "libs/theming/*.md",
+          {
+            "glob": "libs/theming/src/**/*.scss",
+            "input": ".",
+            "output": "assets"
+          }
+        ]
       }
     },
     "publish": {

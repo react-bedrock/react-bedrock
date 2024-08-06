@@ -1,0 +1,127 @@
+.base {
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  width: fit-content;
+  background-color: inherit;
+  border: none;
+}
+
+.base:hover {
+  cursor: pointer;
+}
+
+/*** size ***/
+.small {
+  padding: 0.25rem 0.5rem;
+}
+
+.medium {
+  padding: 0.375rem 0.625rem;
+}
+
+.large {
+  padding: 0.5rem 0.75rem;
+}
+
+/*** contained ***/
+.contained {
+  box-shadow: var(--react-bedrock-button-contained-shadow);
+}
+
+.primary-contained {
+  background-color: var(--react-bedrock-button-primary-contained-background-color);
+  color: var(--react-bedrock-button-primary-contained-text-color);
+}
+
+.primary-contained:hover {
+  background-color: var(--react-bedrock-button-primary-contained-hover-background-color);
+}
+
+.secondary-contained {
+  background-color: var(--react-bedrock-button-secondary-contained-background-color);
+  color: var(--react-bedrock-button-secondary-contained-text-color);
+}
+
+.secondary-contained:hover {
+  background-color: var(--react-bedrock-button-secondary-contained-hover-background-color);
+}
+
+.accent-contained {
+  background-color: var(--react-bedrock-button-accent-contained-background-color);
+  color: var(--react-bedrock-button-accent-contained-text-color);
+}
+
+.accent-contained:hover {
+  background-color: var(--react-bedrock-button-accent-contained-hover-background-color);
+}
+
+/*** outlined ***/
+.outlined {
+  box-shadow: var(--react-bedrock-button-outlined-shadow);
+  border: var(--react-bedrock-button-outlined-border);
+}
+
+.primary-outlined {
+  border-color: var(--react-bedrock-button-primary-outlined-border-color);
+  color: var(--react-bedrock-button-primary-outlined-text-color);
+}
+
+.primary-outlined:hover {
+  border-color: var(--react-bedrock-button-primary-outlined-hover-border-color);
+  color: var(--react-bedrock-button-primary-outlined-hover-text-color);
+}
+
+.secondary-outlined {
+  border-color: var(--react-bedrock-button-secondary-outlined-border-color);
+  color: var(--react-bedrock-button-secondary-outlined-text-color);
+}
+
+.secondary-outlined:hover {
+  border-color: var(--react-bedrock-button-secondary-outlined-hover-background-color);
+  color: var(--react-bedrock-button-secondary-outlined-hover-text-color);
+}
+
+.accent-outlined {
+  border-color: var(--react-bedrock-button-accent-outlined-border-color);
+  color: var(--react-bedrock-button-accent-outlined-text-color);
+}
+
+.accent-outlined:hover {
+  border-color: var(--react-bedrock-button-accent-outlined-hover-border-color);
+  color: var(--react-bedrock-button-accent-outlined-hover-text-color);
+}
+
+/*** text ***/
+.text {
+  box-shadow: var(--react-bedrock-button-text-shadow);
+}
+
+.primary-text {
+  color: var(--react-bedrock-button-primary-text-text-color);
+}
+
+.primary-text:hover {
+  color: var(--react-bedrock-button-primary-text-hover-text-color);
+}
+
+.secondary-text {
+  color: var(--react-bedrock-button-secondary-text-text-color);
+}
+
+.secondary-text:hover {
+  color: var(--react-bedrock-button-secondary-text-hover-text-color);
+}
+
+.accent-text {
+  color: var(--react-bedrock-button-accent-text-text-color);
+}
+
+.accent-text:hover {
+  color: var(--react-bedrock-button-accent-text-hover-text-color);
+}
+
+/*** pill ***/
+.pill {
+  border-radius: 50px;
+}

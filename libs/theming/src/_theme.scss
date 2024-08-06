@@ -8,5 +8,63 @@ $default-theme: (
 $theme: $default-theme;
 
 @if global-variable-exists($name: 'configure-theme') {
-  $theme: deep-merge($default-theme, $configure-theme);
+  $theme: map.deep-merge($default-theme, $configure-theme);
+}
+
+:root {
+  /*** GENERIC ***/
+
+  /** Colors **/
+  /* Background */
+  --react-bedrock-primary-background-color: #{map.get($theme, "light-theme", "primary-background-color")};
+  --react-bedrock-secondary-background-color: #{map.get($theme, "light-theme", "secondary-background-color")};
+  --react-bedrock-accent-background-color: #{map.get($theme, "light-theme", "accent-background-color")};
+
+  /*** BUTTON ***/
+
+  /** Contained **/
+  --react-bedrock-button-contained-shadow: #{map.get($theme, "light-theme", "shadow-sm")};
+  /* Primary */
+  --react-bedrock-button-primary-contained-background-color: #{map.get($theme, "light-theme", "primary-background-color")};
+  --react-bedrock-button-primary-contained-text-color: #{map.get($theme, "light-theme", "text-color")};
+  --react-bedrock-button-primary-contained-hover-background-color: #{map.get($theme, "light-theme", "primary-hover-background-color")};
+  /* Secondary */
+  --react-bedrock-button-secondary-contained-background-color: #{map.get($theme, "light-theme", "secondary-background-color")};
+  --react-bedrock-button-secondary-contained-text-color: #{map.get($theme, "light-theme", "secondary-text-color")};
+  --react-bedrock-button-secondary-contained-hover-background-color: #{map.get($theme, "light-theme", "secondary-hover-background-color")};
+  /* Accent */
+  --react-bedrock-button-accent-contained-background-color: #{map.get($theme, "light-theme", "accent-color")};
+  --react-bedrock-button-accent-contained-text-color: #{map.get($theme, "light-theme", "accent-text-color")};
+  --react-bedrock-button-accent-contained-hover-background-color: #{map.get($theme, "light-theme", "accent-background-hover")};
+
+  /** Outlined **/
+  --react-bedrock-button-outlined-shadow: #{map.get($theme, "light-theme", "shadow-sm")};
+  --react-bedrock-button-outlined-border: 1px solid;
+  /* Primary */
+  --react-bedrock-button-primary-outlined-border-color: #{map.get($theme, "light-theme", "primary-background-color")};
+  --react-bedrock-button-primary-outlined-text-color: #{map.get($theme, "light-theme", "primary-background-color")};
+  --react-bedrock-button-primary-outlined-hover-border-color: #{map.get($theme, "light-theme", "primary-hover-color")};
+  --react-bedrock-button-primary-outlined-hover-text-color: #{map.get($theme, "light-theme", "primary-hover-color")};
+  /* Secondary */
+  --react-bedrock-button-secondary-outlined-border-color: #{map.get($theme, "light-theme", "secondary-color")};
+  --react-bedrock-button-secondary-outlined-text-color: #{map.get($theme, "light-theme", "secondary-color")};
+  --react-bedrock-button-secondary-outlined-hover-background-color: #{map.get($theme, "light-theme", "secondary-hover-color")};
+  --react-bedrock-button-secondary-outlined-hover-text-color: #{map.get($theme, "light-theme", "secondary-hover-color")};
+  /* Accent */
+  --react-bedrock-button-accent-outlined-border-color: #{map.get($theme, "light-theme", "accent-color")};
+  --react-bedrock-button-accent-outlined-text-color: #{map.get($theme, "light-theme", "accent-color")};
+  --react-bedrock-button-accent-outlined-hover-border-color: #{map.get($theme, "light-theme", "accent-hover-color")};
+  --react-bedrock-button-accent-outlined-hover-text-color: #{map.get($theme, "light-theme", "accent-hover-color")};
+
+  /** Text **/
+  --react-bedrock-button-text-shadow: none;
+  /* Primary */
+  --react-bedrock-button-primary-text-text-color: #{map.get($theme, "light-theme", "primary-background-color")};
+  --react-bedrock-button-primary-text-hover-text-color: #{map.get($theme, "light-theme", "primary-hover-color")};
+  /* Secondary */
+  --react-bedrock-button-secondary-text-text-color: #{map.get($theme, "light-theme", "secondary-color")};
+  --react-bedrock-button-secondary-text-hover-text-color: #{map.get($theme, "light-theme", "secondary-hover-color")};
+  /* Accent */
+  --react-bedrock-button-accent-text-text-color: #{map.get($theme, "light-theme", "accent-color")};
+  --react-bedrock-button-accent-text-hover-text-color: #{map.get($theme, "light-theme", "accent-hover-color")};
 }

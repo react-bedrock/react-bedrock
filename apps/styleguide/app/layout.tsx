@@ -1,3 +1,4 @@
+import './global.scss'
 import styles from './layout.module.scss'
 import { NavBar } from './nav-bar/nav-bar'
 
