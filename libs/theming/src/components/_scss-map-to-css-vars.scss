@@ -1,0 +1,27 @@
+@use "sass:meta";
+
+@mixin set-css-variable($name, $value) {
+  // --test-variable: blue;
+  --#{$name}: #{$value};
+}
+
+// create mixin
+@mixin scss-map-to-css-vars($map, $prefix, $key: "") {
+  @each $name, $value in $map {
+    // copy map key to track current spot
+    $key-copy: $key;
+
+    // create name for CSS custom property that contains:
+    // current key + child key from nested map
+    $key: #{$key}-#{$name};
+
+    @if meta.type-of($value) == "map" or meta.type-of($value) == "list" {
+        // if value is a map, invoke it once more (all maps are lists and sometimes a single item map is not evaluated as a map but does count as a list)
+        @include scss-map-to-css-vars($value, $prefix, $key);
+    } @else {
+      @include set-css-variable("#{$prefix}#{$key}", $value);
+    }
+    // reset map key for next iteration
+    $key: $key-copy;
+  }
+}

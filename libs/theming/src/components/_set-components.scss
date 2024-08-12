@@ -1,0 +1,42 @@
+@use "sass:map";
+@import './scss-map-to-css-vars';
+@import './default-components';
+
+@mixin set-components($components-config: ()) {
+  $components: map.deep-merge($default-components, $components-config);
+
+  $current-palette: "light" !global;
+  :root {
+    color-scheme: light;
+    @include scss-map-to-css-vars($components, 'react-bedrock');
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+    @include scss-map-to-css-vars($components, 'react-bedrock');
+  }
+
+  $current-palette: "dark" !global;/* Dark theme (system preference) */
+  :root {
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme]) {
+        color-scheme: dark;
+        @include scss-map-to-css-vars($components, 'react-bedrock');
+      }
+    }
+  }
+  
+
+  // @each $name, $value in map.get($theme, "palette") {
+  //   $current-palette: $name !global;
+
+  //   :root {
+  //     html {
+  //       &[data-theme=#{$current-palette}] {
+  //         color-scheme: $current-palette;
+  //         @include scss-map-to-css-vars($components, 'react-bedrock');
+  //       }
+  //     }
+  //   }
+  // }
+};

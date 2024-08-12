@@ -1,1 +1,4 @@
-@import "libs/theming/src/theme";
+@import "./theme";
+@import "../../../libs/theming/src/components/set-components";
+
+@include set-components();
