@@ -15,5 +15,6 @@ $default-paper: (
     "16": map.get($theme, "shadows", "16"),
     "24": map.get($theme, "shadows", "24")
   ),
-  "padding": "1rem 2rem"
+  "padding": "1rem 2rem",
+  "outlined": map.get($theme, "borders", "thin")
 );

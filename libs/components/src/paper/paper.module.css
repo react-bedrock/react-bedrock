@@ -2,6 +2,10 @@
   padding: var(--react-bedrock-paper-padding);
 }
 
+.outlined {
+  border: var(--react-bedrock-paper-outlined);
+}
+
 .rounded {
   border-radius: var(--react-bedrock-paper-corners-rounded);
 }
