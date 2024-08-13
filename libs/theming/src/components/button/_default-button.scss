@@ -1,0 +1,132 @@
+@use "sass:map";
+@use 'sass:color';
+
+$default-button: (
+  'contained': (
+    'shadow': map.get($theme, "shadows", "small"),
+    'primary': (
+      'background': (
+        'color': map.get($theme, "palette", $current-palette, "primary", "main")
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "primary", "contrast-text")
+      ),
+      'hover': (
+        'background': (
+          'color': color.scale(map.get($theme, "palette", $current-palette, "primary", "main"), $lightness: -10%)
+        )
+      )
+    ),
+    'secondary': (
+      'background': (
+        'color': map.get($theme, "palette", $current-palette, "secondary", "main"),
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "secondary", "contrast-text")
+      ),
+      'hover': (
+        'background': (
+          'color': darken(map.get($theme, "palette", $current-palette, "secondary", "main"), 10%)
+        )
+      )
+    ),
+    'accent': (
+      'background': (
+        'color': map.get($theme, "palette", $current-palette, "accent", "main")
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "accent", "contrast-text")
+      ),
+      'hover': (
+        'background': (
+          'color': darken(map.get($theme, "palette", $current-palette, "accent", "main"), 10%)
+        )
+      )
+    )
+  ),
+  'outlined': (
+    'shadow': map.get($theme, "shadows", "small"),
+    'border': map.get($theme, "borders", "thin"),
+    'primary': (
+      'border': (
+        'color': map.get($theme, "palette", $current-palette, "primary", "main")
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "primary", "main")
+      ),
+      'hover': (
+        'border': (
+          'color': darken(map.get($theme, "palette", $current-palette, "primary", "main"), 10%)
+        ),
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "primary", "main"), 10%)
+        )
+      )
+    ),
+    'secondary': (
+      'border': (
+        'color': map.get($theme, "palette", $current-palette, "secondary", "main")
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "secondary", "main")
+      ),
+      'hover': (
+        'border': (
+          'color': darken(map.get($theme, "palette", $current-palette, "secondary", "main"), 10%)
+        ),
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "secondary", "main"), 10%)
+        )
+      )
+    ),
+    'accent': (
+      'border': (
+        'color': map.get($theme, "palette", $current-palette, "accent", "main")
+      ),
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "accent", "main")
+      ),
+      'hover': (
+        'border': (
+          'color': darken(map.get($theme, "palette", $current-palette, "accent", "main"), 10%),
+        ),
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "accent", "main"), 10%)
+        )
+      )
+    )
+  ),
+  'text': (
+    'shadow': none,
+    'primary': (
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "primary", "main"),
+      ),
+      'hover': (
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "primary", "main"), 10%)
+        )
+      )
+    ),
+    'secondary': (
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "secondary", "main")
+      ),
+      'hover': (
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "secondary", "main"), 10%)
+        )
+      )
+    ),
+    'accent': (
+      'text': (
+        'color': map.get($theme, "palette", $current-palette, "accent", "main")
+      ),
+      'hover': (
+        'text': (
+          'color': darken(map.get($theme, "palette", $current-palette, "accent", "main"), 10%)
+        )
+      )
+    )
+  )
+);

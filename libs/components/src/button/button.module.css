@@ -30,30 +30,30 @@
 }
 
 .primary-contained {
-  background-color: var(--react-bedrock-button-primary-contained-background-color);
-  color: var(--react-bedrock-button-primary-contained-text-color);
+  background-color: var(--react-bedrock-button-contained-primary-background-color);
+  color: var(--react-bedrock-button-contained-primary-text-color);
 }
 
 .primary-contained:hover {
-  background-color: var(--react-bedrock-button-primary-contained-hover-background-color);
+  background-color: var(--react-bedrock-button-contained-primary-hover-background-color);
 }
 
 .secondary-contained {
-  background-color: var(--react-bedrock-button-secondary-contained-background-color);
-  color: var(--react-bedrock-button-secondary-contained-text-color);
+  background-color: var(--react-bedrock-button-contained-secondary-background-color);
+  color: var(--react-bedrock-button-contained-secondary-text-color);
 }
 
 .secondary-contained:hover {
-  background-color: var(--react-bedrock-button-secondary-contained-hover-background-color);
+  background-color: var(--react-bedrock-button-contained-secondary-hover-background-color);
 }
 
 .accent-contained {
-  background-color: var(--react-bedrock-button-accent-contained-background-color);
-  color: var(--react-bedrock-button-accent-contained-text-color);
+  background-color: var(--react-bedrock-button-contained-accent-background-color);
+  color: var(--react-bedrock-button-contained-accent-text-color);
 }
 
 .accent-contained:hover {
-  background-color: var(--react-bedrock-button-accent-contained-hover-background-color);
+  background-color: var(--react-bedrock-button-contained-accent-hover-background-color);
 }
 
 /*** outlined ***/
@@ -63,33 +63,33 @@
 }
 
 .primary-outlined {
-  border-color: var(--react-bedrock-button-primary-outlined-border-color);
-  color: var(--react-bedrock-button-primary-outlined-text-color);
+  border-color: var(--react-bedrock-button-outlined-primary-border-color);
+  color: var(--react-bedrock-button-outlined-primary-text-color);
 }
 
 .primary-outlined:hover {
-  border-color: var(--react-bedrock-button-primary-outlined-hover-border-color);
-  color: var(--react-bedrock-button-primary-outlined-hover-text-color);
+  border-color: var(--react-bedrock-button-outlined-primary-hover-border-color);
+  color: var(--react-bedrock-button-outlined-primary-hover-text-color);
 }
 
 .secondary-outlined {
-  border-color: var(--react-bedrock-button-secondary-outlined-border-color);
-  color: var(--react-bedrock-button-secondary-outlined-text-color);
+  border-color: var(--react-bedrock-button-outlined-secondary-border-color);
+  color: var(--react-bedrock-button-outlined-secondary-text-color);
 }
 
 .secondary-outlined:hover {
-  border-color: var(--react-bedrock-button-secondary-outlined-hover-background-color);
-  color: var(--react-bedrock-button-secondary-outlined-hover-text-color);
+  border-color: var(--react-bedrock-button-outlined-secondary-hover-background-color);
+  color: var(--react-bedrock-button-outlined-secondary-hover-text-color);
 }
 
 .accent-outlined {
-  border-color: var(--react-bedrock-button-accent-outlined-border-color);
-  color: var(--react-bedrock-button-accent-outlined-text-color);
+  border-color: var(--react-bedrock-button-outlined-accent-border-color);
+  color: var(--react-bedrock-button-outlined-accent-text-color);
 }
 
 .accent-outlined:hover {
-  border-color: var(--react-bedrock-button-accent-outlined-hover-border-color);
-  color: var(--react-bedrock-button-accent-outlined-hover-text-color);
+  border-color: var(--react-bedrock-button-outlined-accent-hover-border-color);
+  color: var(--react-bedrock-button-outlined-accent-hover-text-color);
 }
 
 /*** text ***/
@@ -98,27 +98,27 @@
 }
 
 .primary-text {
-  color: var(--react-bedrock-button-primary-text-text-color);
+  color: var(--react-bedrock-button-text-primary-text-color);
 }
 
 .primary-text:hover {
-  color: var(--react-bedrock-button-primary-text-hover-text-color);
+  color: var(--react-bedrock-button-text-primary-hover-text-color);
 }
 
 .secondary-text {
-  color: var(--react-bedrock-button-secondary-text-text-color);
+  color: var(--react-bedrock-button-text-secondary-text-color);
 }
 
 .secondary-text:hover {
-  color: var(--react-bedrock-button-secondary-text-hover-text-color);
+  color: var(--react-bedrock-button-text-secondary-hover-text-color);
 }
 
 .accent-text {
-  color: var(--react-bedrock-button-accent-text-text-color);
+  color: var(--react-bedrock-button-text-accent-text-color);
 }
 
 .accent-text:hover {
-  color: var(--react-bedrock-button-accent-text-hover-text-color);
+  color: var(--react-bedrock-button-text-accent-hover-text-color);
 }
 
 /*** pill ***/
