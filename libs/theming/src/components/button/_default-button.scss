@@ -20,8 +20,8 @@ $default-button: (
     'secondary': (
       'background': (
         'color': map.get($theme, "palette", $current-palette, "secondary", "main"),
-      )
-      'text' (
+      ),
+      'text': (
         'color': map.get($theme, "palette", $current-palette, "secondary", "contrast-text")
       ),
       'hover': (
