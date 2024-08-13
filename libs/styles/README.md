@@ -1,7 +1,7 @@
-# theming
+# styles
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build theming` to build the library.
+Run `nx build styles` to build the library.

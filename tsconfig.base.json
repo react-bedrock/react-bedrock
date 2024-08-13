@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@react-bedrock/components": ["libs/components/src/index.ts"],
-      "@react-bedrock/theming": ["libs/theming/src/index.ts"]
+      "@react-bedrock/styles": ["libs/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

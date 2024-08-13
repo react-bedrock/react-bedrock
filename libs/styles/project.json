@@ -1,20 +1,20 @@
 {
-  "name": "theming",
+  "name": "styles",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/theming/src",
+  "sourceRoot": "libs/styles/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/theming",
-        "main": "libs/theming/src/index.ts",
-        "tsConfig": "libs/theming/tsconfig.lib.json",
+        "outputPath": "dist/libs/styles",
+        "main": "libs/styles/src/index.ts",
+        "tsConfig": "libs/styles/tsconfig.lib.json",
         "assets": [
-          "libs/theming/*.md",
+          "libs/styles/*.md",
           {
-            "glob": "libs/theming/src/**/*.scss",
+            "glob": "libs/styles/src/**/*.scss",
             "input": ".",
             "output": "assets"
           }
@@ -29,10 +29,7 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/theming/**/*.ts",
-          "libs/theming/package.json"
-        ]
+        "lintFilePatterns": ["libs/styles/**/*.ts", "libs/styles/package.json"]
       }
     }
   },

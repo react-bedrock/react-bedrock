@@ -1,9 +1,9 @@
-@use "sass:map";
+@use 'sass:map';
 @import './default-theme';
 
-$current-palette: "light";
+$current-palette: 'light';
 $theme: ();
 
 @mixin set-theme($theme-config: ()) {
   $theme: map.deep-merge($default-theme, $theme-config) !global;
-};
+}
