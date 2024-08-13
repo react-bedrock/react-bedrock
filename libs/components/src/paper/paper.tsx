@@ -6,9 +6,19 @@ type PaperProps = HtmlHTMLAttributes<HTMLDivElement> & PropsWithChildren & {
 }
 
 export function Paper(props: PaperProps) {
-  const { corners = "rounded", children } = props;
+  const { corners = "rounded", children, ...rest } = props;
+
+  function getStyles(): string {
+    const styleStrings = [
+      styles[corners]
+    ];
+
+    return styleStrings.join(' ');
+  }
   
   return (
-    <div>{children}</div>
+    <div className={getStyles()} {...rest}>
+      {children}
+    </div>
   )
 }

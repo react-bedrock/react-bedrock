@@ -1,0 +1,7 @@
+.rounded {
+  border-radius: var(--react-bedrock-paper-rounded);
+}
+
+.square {
+  border-radius: var(--react-bedrock-paper-square);
+}
