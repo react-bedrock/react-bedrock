@@ -9,7 +9,6 @@
   :root {
     color-scheme: light;
     @include scss-map-to-css-vars($components, "react-bedrock");
-    
   }
 
   @each $name, $value in map.get($theme, "palette") {
