@@ -1,7 +1,47 @@
 .rounded {
-  border-radius: var(--react-bedrock-paper-rounded);
+  border-radius: var(--react-bedrock-paper-corners-rounded);
 }
 
 .square {
-  border-radius: var(--react-bedrock-paper-square);
+  border-radius: var(--react-bedrock-paper-corners-square);
+}
+
+.elevation-0 {
+  box-shadow: var(--react-bedrock-paper-elevation-0);
+}
+
+.elevation-1 {
+  box-shadow: var(--react-bedrock-paper-elevation-1);
+}
+
+.elevation-2 {
+  box-shadow: var(--react-bedrock-paper-elevation-2);
+}
+
+.elevation-3 {
+  box-shadow: var(--react-bedrock-paper-elevation-3);
+}
+
+.elevation-4 {
+  box-shadow: var(--react-bedrock-paper-elevation-4);
+}
+
+.elevation-6 {
+  box-shadow: var(--react-bedrock-paper-elevation-6);
+}
+
+.elevation-8 {
+  box-shadow: var(--react-bedrock-paper-elevation-8);
+}
+
+.elevation-12 {
+  box-shadow: var(--react-bedrock-paper-elevation-12);
+}
+
+.elevation-16 {
+  box-shadow: var(--react-bedrock-paper-elevation-16);
+}
+
+.elevation-24 {
+  box-shadow: var(--react-bedrock-paper-elevation-24);
 }

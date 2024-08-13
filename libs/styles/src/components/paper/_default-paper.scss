@@ -2,5 +2,17 @@ $default-paper: (
   "corners": (
     "rounded": map.get($theme, "shape", "border-radius", "sm"),
     "square": map.get($theme, "shape", "border-radius", "none")
+  ),
+  "elevation": (
+    "0": map.get($theme, "shadows", "0"),
+    "1": map.get($theme, "shadows", "1"),
+    "2": map.get($theme, "shadows", "2"),
+    "3": map.get($theme, "shadows", "3"),
+    "4": map.get($theme, "shadows", "4"),
+    "6": map.get($theme, "shadows", "6"),
+    "8": map.get($theme, "shadows", "8"),
+    "12": map.get($theme, "shadows", "12"),
+    "16": map.get($theme, "shadows", "16"),
+    "24": map.get($theme, "shadows", "24")
   )
 );
