@@ -1,8 +1,10 @@
 import { HtmlHTMLAttributes, PropsWithChildren } from "react";
 import styles from './paper.module.css';
 
-type PaperProps = HtmlHTMLAttributes<HTMLDivElement> & PropsWithChildren & {
-  corners?: "rounded" | "square";
+export type PaperCorners = "rounded" | "square";
+
+export type PaperProps = HtmlHTMLAttributes<HTMLDivElement> & PropsWithChildren & {
+  corners?: PaperCorners;
 }
 
 export function Paper(props: PaperProps) {
