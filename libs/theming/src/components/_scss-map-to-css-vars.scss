@@ -1,0 +1,21 @@
+@use "sass:meta";
+
+// create mixin
+@mixin scss-map-to-css-vars($map, $prefix, $key: "") {
+  @each $name, $value in $map {
+    // copy map key to track current spot
+    $key-copy: $key;
+
+    // create name for CSS custom property that contains:
+    // current key + child key from nested map
+    $key: #{$key}-#{$name};
+
+    @if meta.type-of($value) == "map" or meta.type-of($value) == "list" {
+        @include scss-map-to-css-vars($value, $prefix, $key);
+    } @else {
+      --#{$prefix}#{$key}: #{$value};
+    }
+    // reset map key for next iteration
+    $key: $key-copy;
+  }
+}

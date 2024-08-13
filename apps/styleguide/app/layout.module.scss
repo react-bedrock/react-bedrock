@@ -1,3 +1,5 @@
+@import "libs/theming/src/colors";
+
 .body {
   margin: 0;
 }
@@ -9,7 +11,7 @@
   left: 0;
   right: 0;
   overflow: auto;
-  background-color: rgb(242, 240, 235); // snow white
+  background-color: #eeeeee; // snow white
 }
 
 .container > div {

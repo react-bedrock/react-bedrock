@@ -1,0 +1,22 @@
+@use "sass:map";
+@import './default-components';
+@import './scss-map-to-css-vars';
+
+@mixin set-components($components-config: ()) {
+  $components: map.deep-merge($default-components, $components-config);
+
+  $current-palette: "light" !global;
+  :root {
+    color-scheme: light;
+    @include scss-map-to-css-vars($components, "react-bedrock");
+  }
+
+  @each $name, $value in map.get($theme, "palette") {
+    $current-palette: $name !global;
+
+    :root[data-theme=#{$current-palette}] {
+      color-scheme: $current-palette;
+      @include scss-map-to-css-vars($components, 'react-bedrock');
+    }
+  }
+};

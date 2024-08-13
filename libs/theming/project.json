@@ -1,0 +1,40 @@
+{
+  "name": "theming",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/theming/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/theming",
+        "main": "libs/theming/src/index.ts",
+        "tsConfig": "libs/theming/tsconfig.lib.json",
+        "assets": [
+          "libs/theming/*.md",
+          {
+            "glob": "libs/theming/src/**/*.scss",
+            "input": ".",
+            "output": "assets"
+          }
+        ]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs themeing {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/theming/**/*.ts",
+          "libs/theming/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
