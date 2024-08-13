@@ -5,8 +5,11 @@ import { Button } from './button';
 
 describe('<Button />', () => {
   it('should render successfully', () => {
+    // arrange + act
     const { baseElement } = render(<Button />);
-    expect(baseElement).toBeTruthy();
+
+    // assert
+    expect(baseElement).toBeInTheDocument();
   });
 
   it('should render provided text', () => {
