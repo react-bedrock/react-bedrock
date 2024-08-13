@@ -1,3 +1,7 @@
+.base {
+  padding: var(--react-bedrock-paper-padding);
+}
+
 .rounded {
   border-radius: var(--react-bedrock-paper-corners-rounded);
 }

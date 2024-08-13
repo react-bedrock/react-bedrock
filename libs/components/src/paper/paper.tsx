@@ -14,6 +14,7 @@ export function Paper(props: PaperProps) {
 
   function getStyles(): string {
     const styleStrings = [
+      styles.base,
       styles[corners],
       styles[`elevation-${elevation}`]
     ];
