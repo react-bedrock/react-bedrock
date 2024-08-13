@@ -3,7 +3,7 @@
 
 $default-button: (
   'contained': (
-    'shadow': map.get($theme, 'shadows', 'small'),
+    'shadow': map.get($theme, 'shadows', '1'),
     'primary': (
       'background': (
         'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
@@ -79,7 +79,7 @@ $default-button: (
     ),
   ),
   'outlined': (
-    'shadow': map.get($theme, 'shadows', 'small'),
+    'shadow': map.get($theme, 'shadows', '1'),
     'border': map.get($theme, 'borders', 'thin'),
     'primary': (
       'border': (
