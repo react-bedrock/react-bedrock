@@ -1,0 +1,6 @@
+$default-paper: (
+  "corners": (
+    "rounded": map.get($theme, "shape", "border-radius", "sm"),
+    "square": map.get($theme, "shape", "border-radius", "none")
+  )
+);
