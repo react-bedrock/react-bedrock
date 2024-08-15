@@ -25,23 +25,17 @@ export default function Page() {
       <div className={styles["row-container"]}>
         <PaperContainer title="Corners">
           <Paper corners="rounded">Rounded Paper</Paper>
-          <Paper corners="square">Square Paper</Paper>
+          <Paper corners="squared">Square Paper</Paper>
         </PaperContainer>
         <PaperContainer title="Elevation">
-          <Paper elevation={0}>elevation=0</Paper>
-          <Paper elevation={1}>elevation=1</Paper>
-          <Paper elevation={3}>elevation=2</Paper>
-          <Paper elevation={4}>elevation=3</Paper>
+          <Paper shadow="xs">shadow=&quot;xs&quot;</Paper>
+          <Paper shadow="sm">shadow=&quot;sm&quot;</Paper>
+          <Paper shadow="md">shadow=&quot;md&quot;</Paper>
         </PaperContainer>
         <PaperContainer title="Elevation">
-          <Paper elevation={4}>elevation=4</Paper>
-          <Paper elevation={6}>elevation=6</Paper>
-          <Paper elevation={8}>elevation=8</Paper>
-          <Paper elevation={12}>elevation=12</Paper>
-        </PaperContainer>
-        <PaperContainer title="Elevation">
-          <Paper elevation={16}>elevation=16</Paper>
-          <Paper elevation={24}>elevation=24</Paper>
+          <Paper shadow="lg">shadow=&quot;lg&quot;</Paper>
+          <Paper shadow="lg">shadow=&quot;xl&quot;</Paper>
+          <Paper shadow="2xl">shadow=&quot;2xl&quot;</Paper>
         </PaperContainer>
         <PaperContainer title="Variants">
           <Paper>Default Variant</Paper>

@@ -1,19 +1,16 @@
 $default-paper: (
   "corners": (
     "rounded": map.get($theme, "shape", "border-radius", "sm"),
-    "square": map.get($theme, "shape", "border-radius", "none")
+    "squared": map.get($theme, "shape", "border-radius", "none")
   ),
-  "elevation": (
-    "0": map.get($theme, "shadows", "0"),
-    "1": map.get($theme, "shadows", "1"),
-    "2": map.get($theme, "shadows", "2"),
-    "3": map.get($theme, "shadows", "3"),
-    "4": map.get($theme, "shadows", "4"),
-    "6": map.get($theme, "shadows", "6"),
-    "8": map.get($theme, "shadows", "8"),
-    "12": map.get($theme, "shadows", "12"),
-    "16": map.get($theme, "shadows", "16"),
-    "24": map.get($theme, "shadows", "24")
+  "shadow": (
+    "none": map.get($theme, "shadows", "box", "none"),
+    "xs": map.get($theme, "shadows", "box", "xs"),
+    "xm": map.get($theme, "shadows", "box", "sm"),
+    "md": map.get($theme, "shadows", "box", "md"),
+    "lg": map.get($theme, "shadows", "box", "lg"),
+    "xl": map.get($theme, "shadows", "box", "xl"),
+    "2xl": map.get($theme, "shadows", "box", "2xl")
   ),
   "padding": "1rem 2rem",
   "outlined": map.get($theme, "borders", "thin")

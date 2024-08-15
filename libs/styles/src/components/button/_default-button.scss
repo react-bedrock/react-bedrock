@@ -3,20 +3,14 @@
 
 $default-button: (
   'contained': (
-    'shadow': map.get($theme, 'shadows', '1'),
+    'shadow': map.get($theme, 'shadows', 'box', 'xs'),
     'primary': (
       'background': (
         'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
       ),
       'text': (
         'color':
-          map.get(
-            $theme,
-            'palette',
-            $current-palette,
-            'primary',
-            'contrast-text'
-          ),
+          map.get($theme, 'palette', $current-palette, 'primary', 'contrast-text'),
       ),
       'hover': (
         'background': (
@@ -79,7 +73,7 @@ $default-button: (
     ),
   ),
   'outlined': (
-    'shadow': map.get($theme, 'shadows', '1'),
+    'shadow': map.get($theme, 'shadows', 'box', 'xs'),
     'border': map.get($theme, 'borders', 'thin'),
     'primary': (
       'border': (
@@ -157,7 +151,7 @@ $default-button: (
     ),
   ),
   'text': (
-    'shadow': none,
+    'shadow': map.get($theme, 'shadows', 'box', 'none'),
     'primary': (
       'text': (
         'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),

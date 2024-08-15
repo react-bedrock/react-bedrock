@@ -4,52 +4,37 @@
 
 .outlined {
   border: var(--react-bedrock-paper-outlined);
+  box-shadow: var(--react-bedrock-paper-shadow-none);
 }
 
 .rounded {
   border-radius: var(--react-bedrock-paper-corners-rounded);
 }
 
-.square {
+.squared {
   border-radius: var(--react-bedrock-paper-corners-square);
 }
 
-.elevation-0 {
-  box-shadow: var(--react-bedrock-paper-elevation-0);
+.shadow-xs {
+  box-shadow: var(--react-bedrock-paper-shadow-xs);
 }
 
-.elevation-1 {
-  box-shadow: var(--react-bedrock-paper-elevation-1);
+.shadow-sm {
+  box-shadow: var(--react-bedrock-paper-shadow-xs);
 }
 
-.elevation-2 {
-  box-shadow: var(--react-bedrock-paper-elevation-2);
+.shadow-md {
+  box-shadow: var(--react-bedrock-paper-shadow-md);
 }
 
-.elevation-3 {
-  box-shadow: var(--react-bedrock-paper-elevation-3);
+.shadow-lg {
+  box-shadow: var(--react-bedrock-paper-shadow-lg);
 }
 
-.elevation-4 {
-  box-shadow: var(--react-bedrock-paper-elevation-4);
+.shadow-xl {
+  box-shadow: var(--react-bedrock-paper-shadow-xl);
 }
 
-.elevation-6 {
-  box-shadow: var(--react-bedrock-paper-elevation-6);
-}
-
-.elevation-8 {
-  box-shadow: var(--react-bedrock-paper-elevation-8);
-}
-
-.elevation-12 {
-  box-shadow: var(--react-bedrock-paper-elevation-12);
-}
-
-.elevation-16 {
-  box-shadow: var(--react-bedrock-paper-elevation-16);
-}
-
-.elevation-24 {
-  box-shadow: var(--react-bedrock-paper-elevation-24);
+.shadow-2xl {
+  box-shadow: var(--react-bedrock-paper-shadow-2xl);
 }
