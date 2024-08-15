@@ -1,12 +1,12 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 
-import { Button } from './button';
+import { Paper } from './paper';
 
-describe('<Button />', () => {
+describe('<Paper />', () => {
   it('should render successfully', () => {
     // arrange + act
-    const { baseElement } = render(<Button />);
+    const { baseElement } = render(<Paper />);
 
     // assert
     expect(baseElement).toBeInTheDocument();
@@ -14,13 +14,13 @@ describe('<Button />', () => {
 
   it('should render provided text', () => {
     // arrange
-    const buttonText = 'MockText';
+    const paperText = 'MockText';
 
     // act
-    render(<Button>{buttonText}</Button>);
-    const buttonElement = screen.getByText(RegExp(buttonText));
+    render(<Paper>{paperText}</Paper>);
+    const paperElement = screen.getByText(RegExp(paperText));
 
     // assert
-    expect(buttonElement).toBeInTheDocument();
+    expect(paperElement).toBeInTheDocument();
   });
 });
