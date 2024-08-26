@@ -1,17 +1,17 @@
 @import './default-palette';
 @import './default-typogrophy';
 @import './default-spacing';
-@import './default-breakpoints';
-@import './default-borders';
-@import './default-shadows';
+@import './default-breakpoint';
+@import './default-border';
+@import './default-shadow';
 @import './default-shape';
 
 $default-theme: (
   'palette': $default-palette,
   'typogrophy': $default-typogrophy,
   'spacing': $default-spacing,
-  'breakpoints': $default-breakpoints,
-  'borders': $default-borders,
-  'shadows': $default-shadows,
+  'breakpoints': $default-breakpoint,
+  'borders': $default-border,
+  'shadows': $default-shadow,
   'shape': $default-shape
 );
