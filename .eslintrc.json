@@ -32,6 +32,21 @@
       "rules": {}
     },
     {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "rules": {
+        "no-unused-vars": "error",
+        "comma-dangle": "error",
+        "no-trailing-spaces": "error"
+      }
+    },
+    {
+      "files": ["*.jsx", "*.tsx"],
+      "extends": ["plugin:react/recommend"],
+      "rules": {
+        "react/prefer-stateless-function": "error"
+      }
+    },
+    {
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
       "env": {
         "jest": true
