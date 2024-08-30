@@ -1,9 +1,9 @@
-$default-typogrophy: (
+$default-typography: (
   "font": (
     "family": (
-      "sans": "ui-sans-serif system-ui sans-serif 'Apple Color Emoji' 'Segoe UI Emoji' 'Segoe UI Symbol' 'Noto Color Emoji'",
-      "serif": "ui-serif Georgia Cambria 'Times New Roman' Times serif",
-      "mono": "ui-monospace SFMono-Regular Menlo Monaco Consolas 'Liberation Mono' 'Courier New' monospace"
+      "sans": "ui-sans-serif system-ui sans-serif",
+      "serif": "ui-serif Georgia Cambria Times serif",
+      "mono": "ui-monospace SFMono-Regular Menlo Monaco Consolas monospace"
     ),
     "size": (
       "xs": 0.75rem,  /* 12px */
@@ -32,7 +32,7 @@ $default-typogrophy: (
       "black": 900
     )
   ),
-  "line-hight": (
+  "line-height": (
     "xs": 1rem,  /* 16px */
     "sm": 1.25rem,  /* 20px */
     "md": 1.5rem,  /* 24px */
@@ -51,5 +51,13 @@ $default-typogrophy: (
       "2.5": 0.625rem,
       "3": 0.75rem
     )
+  ),
+  "tracking": (
+    "tighter": -0.05em,
+    "tight": -0.025em,
+    "normal": 0em,
+    "wide": 0.025em,
+    "wider": 0.05em,
+    "widest": 0.1em
   )
 );
