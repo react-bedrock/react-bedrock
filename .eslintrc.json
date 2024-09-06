@@ -43,7 +43,39 @@
       "files": ["*.jsx", "*.tsx"],
       "extends": ["plugin:react/recommend"],
       "rules": {
-        "react/prefer-stateless-function": "error"
+        "react/button-has-type": "error",
+        "react/no-unused-prop-types": "error",
+        "react/jsx-pascal-case": "error",
+        "react/jsx-no-script-url": "error",
+        "react/no-danger": "error",
+        "react/no-unstable-nested-components": ["error", { "allowAsProps": true }],
+        "react/jsx-fragments": ["error", "element"],
+        "react/destructuring-assignment": ["off"],
+        "react/jsx-no-leaked-render": ["error", { "validStrategies": ["ternary"] }],
+        "react/function-component-definition": [
+          "warn",
+          { "namedComponents": "arrow-function" }
+        ],
+        "react/jsx-key": [
+          "error",
+          {
+            "checkFragmentShorthand": true,
+            "checkKeyBeforeSpread": true,
+            "warnOnDuplicates": true
+          }
+        ],
+        "react/jsx-no-useless-fragment": "error",
+        "react/jsx-curly-brace-presence": [
+          "error",
+          {
+            "props": "ignore",
+            "children": "ignore",
+            "propElementValues": "always"
+          }
+        ],
+        "react/no-typos": "warn",
+        "react/self-closing-comp": "warn",
+        "react/jsx-one-expression-per-line": "warn"
       }
     },
     {
