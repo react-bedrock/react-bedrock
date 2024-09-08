@@ -1,5 +1,5 @@
 @import './default-palette';
-@import './default-typogrophy';
+@import './default-typography';
 @import './default-spacing';
 @import './default-breakpoint';
 @import './default-border';
@@ -8,7 +8,7 @@
 
 $default-theme: (
   'palette': $default-palette,
-  'typogrophy': $default-typogrophy,
+  'typography': $default-typography,
   'spacing': $default-spacing,
   'breakpoints': $default-breakpoint,
   'borders': $default-border,

@@ -1,0 +1,81 @@
+@use 'sass:map';
+
+$default-html-elements: (
+  "h1": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "light"),
+      "size": map.get($theme, "typography", "font", "size", "8xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "lg"),
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "tight")
+    )
+  ),
+  "h2": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "light"),
+      "size": map.get($theme, "typography", "font", "size", "6xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "sm")
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "normal")
+    )
+  ),
+  "h3": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "normal"),
+      "size": map.get($theme, "typography", "font", "size", "5xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "sm")
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "normal")
+    )
+  ),
+  "h4": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "normal"),
+      "size": map.get($theme, "typography", "font", "size", "3xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "sm")
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "normal")
+    )
+  ),
+  "h5": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "normal"),
+      "size": map.get($theme, "typography", "font", "size", "2xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "sm")
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "normal")
+    )
+  ),
+  "h6": (
+    "font": (
+      "weight": map.get($theme, "typography", "font", "weight", "medium"),
+      "size": map.get($theme, "typography", "font", "size", "xl")
+    ),
+    "line": (
+      "height": map.get($theme, "typography", "line-height", "md")
+    ),
+    "letter": (
+      "spacing": map.get($theme, "typography", "tracking", "normal")
+    )
+  ),
+  "body": (
+    "font": (
+      "family": map.get($theme, "typography", "font", "family", "sans")
+    )
+  )
+);
