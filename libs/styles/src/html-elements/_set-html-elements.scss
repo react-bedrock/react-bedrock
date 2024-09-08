@@ -1,0 +1,13 @@
+@use 'sass:map';
+@import './default-html-elements';
+@import '../utility/scss-map-to-element-styles';
+
+$html-elements: ();
+
+@mixin set-html-elements($html-elements-config: ()) {
+  $html-elements: map.deep-merge($default-html-elements, $html-elements-config) !global;
+
+  :root {
+    @include scss-map-to-element-styles($html-elements);
+  }
+};

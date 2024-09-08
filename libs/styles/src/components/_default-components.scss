@@ -1,5 +1,7 @@
 @import './button/default-button';
+@import './paper/default-paper';
 
 $default-components: (
   'button': $default-button,
+  'paper': $default-paper
 );
