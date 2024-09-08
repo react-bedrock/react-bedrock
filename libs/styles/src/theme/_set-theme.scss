@@ -5,5 +5,7 @@ $current-palette: 'light';
 $theme: ();
 
 @mixin set-theme($theme-config: ()) {
-  $theme: map.deep-merge($default-theme, $theme-config) !global;
+  :root {
+    @include scss-map-to-css-vars($theme, 'react-bedrock-theme');
+  }
 }

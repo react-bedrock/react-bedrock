@@ -1,17 +1,17 @@
 $default-paper: (
   "corners": (
-    "rounded": map.get($theme, "shape", "border-radius", "sm"),
-    "squared": map.get($theme, "shape", "border-radius", "none")
+    "rounded": --react-bedrock-theme-shape-border-radius-sm,
+    "squared": --react-bedrock-theme-shape-border-radius-none
   ),
   "shadow": (
-    "none": map.get($theme, "shadows", "box", "none"),
-    "xs": map.get($theme, "shadows", "box", "xs"),
-    "xm": map.get($theme, "shadows", "box", "sm"),
-    "md": map.get($theme, "shadows", "box", "md"),
-    "lg": map.get($theme, "shadows", "box", "lg"),
-    "xl": map.get($theme, "shadows", "box", "xl"),
-    "2xl": map.get($theme, "shadows", "box", "2xl")
+    "none": --react-bedrock-theme-shadows-box-none,
+    "xs": --react-bedrock-theme-shadows-box-xs,
+    "xm": --react-bedrock-theme-shadows-box-sm,
+    "md": --react-bedrock-theme-shadows-box-md,
+    "lg": --react-bedrock-theme-shadows-box-lg,
+    "xl": --react-bedorck-theme-shadows-box-xl,
+    "2xl": --react-bedrock-theme-shadows-box-2xl
   ),
   "padding": "1rem 2rem",
-  "outlined": map.get($theme, "borders", "thin")
+  "outlined": --react-bedrock-theme-borders-thin
 );

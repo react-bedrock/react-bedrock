@@ -1,22 +1,25 @@
 @use 'sass:map';
 @use 'sass:color';
 
+@function primary-main-color($current-palette) {
+  @return --react-bedrock-theme-palette-#{$current-palette}-primary-main
+}
+
 $default-button: (
   'contained': (
-    'shadow': map.get($theme, 'shadow', 'box', 'xs'),
+    'shadow': --react-bedrock-theme-shadow-box-xs,
     'primary': (
       'background': (
-        'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
+        'color': --react-bedrock-theme-palette-#{$current-palette}-primary-main,
       ),
       'text': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'primary', 'contrast-text'),
+        'color': --react-bedrock-theme-palette-#{$current-palette}-primary-contrast-text
       ),
       'hover': (
         'background': (
           'color':
             color.scale(
-              map.get($theme, 'palette', $current-palette, 'primary', 'main'),
+              primary-main-color($current-palette),
               $lightness: -10%
             ),
         ),
