@@ -9,15 +9,17 @@ $theme: ();
 
   :root {
     @each $key, $value in $theme {
-      @if($key != 'palette') {
-        @include nested-map-to-css-vars($value, react-bedrock-theme-#{$key});
+      @if($key == 'palette') {
+        // set light palette as default
+        @include nested-map-to-css-vars(map.get($value, 'light'), react-bedrock-theme-palette);
       } @else {
-        @include nested-map-to-css-vars(map.get($value, 'light'), react-bedrock-theme-palette)
+        @include nested-map-to-css-vars($value, react-bedrock-theme-#{$key});
       }
     }
   }
 
   @each $key, $value in map.get($theme, 'palette') {
+    // configure all palettes through css custom data-theme attribute
     :root[data-theme='#{$key}'] {
       @include nested-map-to-css-vars($value, 'react-bedrock-palette');
     }
