@@ -1,10 +1,13 @@
 @use 'sass:map';
 @import './default-theme';
+@import '../utility/scss-map-to-css-vars';
 
 $current-palette: 'light';
 $theme: ();
 
 @mixin set-theme($theme-config: ()) {
+  $theme: map.deep-merge($default-theme, $theme) !global;
+
   :root {
     @include scss-map-to-css-vars($theme, 'react-bedrock-theme');
   }

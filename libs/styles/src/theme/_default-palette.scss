@@ -1,47 +1,48 @@
+@use 'sass:color';
 @import '../colors/index';
 
 $default-palette: (
   'light': (
     'primary': (
       'main': $blue-700,
-      'light': $blue-400,
-      'dark': $blue-800,
+      'light': color.scale($blue-700, $lightness: 15%),
+      'dark': color.scale($blue-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'secondary': (
       'main': $purple-500,
-      'light': $purple-300,
-      'dark': $purple-700,
+      'light': color.scale($purple-500, $lightness: 15%),
+      'dark': color.scale($purple-500, $lightness: -15%),
       'contrast-text': white,
     ),
     'accent': (
       'main': $purple-500,
-      'light': $purple-300,
-      'dark': $purple-700,
+      'light': color.scale($purple-500, $lightness: 15%),
+      'dark': color.scale($purple-500, $lightness: -15%),
       'contrast-text': white,
     ),
     'error': (
       'main': $red-700,
-      'light': $red-400,
-      'dark': $red-800,
+      'light': color.scale($red-700, $lightness: 15%),
+      'dark': color.scale($red-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'warning': (
       'main': $orange-700,
-      'light': $orange-500,
-      'dark': $orange-900,
+      'light': color.scale($orange-700, $lightness: 15%),
+      'dark': color.scale($orange-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'info': (
       'main': $blue-600,
-      'light': $blue-400,
-      'dark': $blue-800,
+      'light': color.scale($blue-600, $lightness: 15%),
+      'dark': color.scale($blue-600, $lightness: -15%),
       'contrast-text': white,
     ),
     'success': (
       'main': $green-800,
-      'light': $green-500,
-      'dark': $green-900,
+      'light': color.scale($green-800, $lightness: 15%),
+      'dark': color.scale($green-800, $lightness: -15%),
       'contrast-text': white,
     ),
     'text': (
@@ -57,44 +58,44 @@ $default-palette: (
   'dark': (
     'primary': (
       'main': $blue-700,
-      'light': $blue-400,
-      'dark': $blue-800,
+      'light': color.scale($blue-700, $lightness: 15%),
+      'dark': color.scale($blue-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'secondary': (
       'main': $purple-500,
-      'light': $purple-300,
-      'dark': $purple-700,
+      'light': color.scale($purple-500, $lightness: 15%),
+      'dark': color.scale($purple-500, $lightness: -15%),
       'contrast-text': white,
     ),
     'accent': (
       'main': $purple-500,
-      'light': $purple-300,
-      'dark': $purple-700,
+      'light': color.scale($purple-500, $lightness: 15%),
+      'dark': color.scale($purple-500, $lightness: -15%),
       'contrast-text': white,
     ),
     'error': (
       'main': $red-700,
-      'light': $red-400,
-      'dark': $red-800,
+      'light': color.scale($red-700, $lightness: 15%),
+      'dark': color.scale($red-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'warning': (
       'main': $orange-700,
-      'light': $orange-500,
-      'dark': $orange-900,
+      'light': color.scale($red-700, $lightness: 15%),
+      'dark': color.scale($red-700, $lightness: -15%),
       'contrast-text': white,
     ),
     'info': (
       'main': $blue-600,
-      'light': $blue-400,
-      'dark': $blue-800,
+      'light': color.scale($blue-600, $lightness: 15%),
+      'dark': color.scale($blue-600, $lightness: -15%),
       'contrast-text': white,
     ),
     'success': (
       'main': $green-800,
-      'light': $green-500,
-      'dark': $green-900,
+      'light': color.scale($green-800, $lightness: 15%),
+      'dark': color.scale($green-800, $lightness: -15%),
       'contrast-text': white,
     ),
     'text': (
