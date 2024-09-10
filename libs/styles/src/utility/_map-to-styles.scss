@@ -1,6 +1,6 @@
 @use 'sass:meta';
 
-@mixin scss-map-to-element-styles($map) {
+@mixin map-to-styles($map) {
   @each $element, $inner-map in $map {
     #{$element} {
       @each $name, $value in $inner-map {

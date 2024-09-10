@@ -1,14 +1,25 @@
 @use 'sass:map';
 @import './default-theme';
-@import '../utility/scss-map-to-css-vars';
+@import '../utility/nested-map-to-css-vars';
 
-$current-palette: 'light';
 $theme: ();
 
 @mixin set-theme($theme-config: ()) {
   $theme: map.deep-merge($default-theme, $theme) !global;
 
   :root {
-    @include scss-map-to-css-vars($theme, 'react-bedrock-theme');
+    @each $key, $value in $theme {
+      @if($key != 'palette') {
+        @include nested-map-to-css-vars($value, react-bedrock-theme-#{$key});
+      } @else {
+        @include nested-map-to-css-vars(map.get($value, 'light'), react-bedrock-theme-palette)
+      }
+    }
+  }
+
+  @each $key, $value in map.get($theme, 'palette') {
+    :root[data-theme='#{$key}'] {
+      @include nested-map-to-css-vars($value, 'react-bedrock-palette');
+    }
   }
 }

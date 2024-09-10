@@ -1,6 +1,6 @@
 @use 'sass:map';
 @import './default-html-elements';
-@import '../utility/scss-map-to-element-styles';
+@import '../utility/map-to-styles';
 
 $html-elements: ();
 
@@ -8,6 +8,6 @@ $html-elements: ();
   $html-elements: map.deep-merge($default-html-elements, $html-elements-config) !global;
 
   :root {
-    @include scss-map-to-element-styles($html-elements);
+    @include map-to-styles($html-elements);
   }
 };
