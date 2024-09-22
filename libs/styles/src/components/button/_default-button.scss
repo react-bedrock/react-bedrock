@@ -1,199 +1,63 @@
-@use 'sass:map';
-@use 'sass:color';
-
 $default-button: (
   'contained': (
-    'shadow': map.get($theme, 'shadow', 'box', 'xs'),
+    'shadow': var(--react-bedrock-theme-shadow-box-xs),
     'primary': (
-      'background': (
-        'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-      ),
-      'text': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'primary', 'contrast-text'),
-      ),
-      'hover': (
-        'background': (
-          'color':
-            color.scale(
-              map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-              $lightness: -10%
-            ),
-        ),
-      ),
+      'background-color': var(--react-bedrock-theme-palette-primary-main),
+      'text-color': var(--react-bedrock-theme-palette-primary-contrast-text),
+      'hover-background-color': var(--react-bedrock-theme-palette-primary-light)
     ),
     'secondary': (
-      'background': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-      ),
-      'text': (
-        'color':
-          map.get(
-            $theme,
-            'palette',
-            $current-palette,
-            'secondary',
-            'contrast-text'
-          ),
-      ),
-      'hover': (
-        'background': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-              10%
-            ),
-        ),
-      ),
+      'background-color': var(--react-bedrock-theme-palette-secondary-main),
+      'text-color': var(--react-bedrock-theme-palette-secondary-contrast-text),
+      'hover-background-color': var(--react-bedrock-theme-palette-secondary-light)
     ),
     'accent': (
-      'background': (
-        'color': map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-      ),
-      'text': (
-        'color':
-          map.get(
-            $theme,
-            'palette',
-            $current-palette,
-            'accent',
-            'contrast-text'
-          ),
-      ),
-      'hover': (
-        'background': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-              10%
-            ),
-        ),
-      ),
+      'background-color': var(--react-bedrock-theme-palette-accent-main),
+      'text-color': var(--react-bedrock-theme-palette-accent-contrast-text),
+      'hover-background-color': var(--react-bedrock-theme-palette-accent-light)
     ),
   ),
   'outlined': (
-    'shadow': map.get($theme, 'shadow', 'box', 'xs'),
-    'border': map.get($theme, 'border', 'thin'),
+    'shadow': var(--react-bedrock-theme-shadow-box-xs),
+    'border': var(--react-bedrock-theme-border-thin),
     'primary': (
-      'border': (
-        'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-      ),
-      'text': (
-        'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-      ),
+      'border-color': var(--react-bedrock-theme-palette-primary-main),
+      'text-color': var(--react-bedrock-theme-palette-primary-main),
       'hover': (
-        'border': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-              10%
-            ),
-        ),
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-              10%
-            ),
-        ),
+        'border-color': var(--react-bedrock-theme-palette-primary-light),
+        'text-color': var(--react-bedrock-theme-palette-primary-light)
       ),
     ),
     'secondary': (
-      'border': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-      ),
-      'text': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-      ),
+      'border-color': var(--react-bedrock-theme-palette-secondary-main),
+      'text-color': var(--react-bedrock-theme-palette-secondary-main),
       'hover': (
-        'border': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-              10%
-            ),
-        ),
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-              10%
-            ),
-        ),
+        'border-color': var(--react-bedrock-theme-palette-secondary-light),
+        'text-color': var(--react-bedrock-theme-palette-secondary-light)
       ),
     ),
     'accent': (
-      'border': (
-        'color': map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-      ),
-      'text': (
-        'color': map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-      ),
+      'border-color': var(--react-bedrock-theme-palette-accent-main),
+      'text-color': var(--react-bedrock-theme-palette-accent-main),
       'hover': (
-        'border': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-              10%
-            ),
-        ),
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-              10%
-            ),
-        ),
+        'border-color': var(--react-bedrock-theme-palette-accent-light),
+        'text-color': var(--react-bedrock-theme-palette-accent-light)
       ),
     ),
   ),
   'text': (
-    'shadow': map.get($theme, 'shadow', 'box', 'none'),
+    'shadow': var(--react-bedrock-theme-shadow-box-none),
     'primary': (
-      'text': (
-        'color': map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-      ),
-      'hover': (
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'primary', 'main'),
-              10%
-            ),
-        ),
-      ),
+      'text-color': var(--react-bedrock-theme-palette-primary-main),
+      'hover-text-color': var(--react-bedrock-theme-palette-primary-light)
     ),
     'secondary': (
-      'text': (
-        'color':
-          map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-      ),
-      'hover': (
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'secondary', 'main'),
-              10%
-            ),
-        ),
-      ),
+      'text-color': var(--react-bedrock-theme-palette-secondary-main),
+      'hover-text-color': var(--react-bedrock-theme-palette-secondary-light)
     ),
     'accent': (
-      'text': (
-        'color': map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-      ),
-      'hover': (
-        'text': (
-          'color':
-            darken(
-              map.get($theme, 'palette', $current-palette, 'accent', 'main'),
-              10%
-            ),
-        ),
-      ),
+      'text-color': var(--react-bedrock-theme-palette-accent-main),
+      'hover-text-color': var(--react-bedrock-theme-palette-accent-light)
     ),
   ),
 );
