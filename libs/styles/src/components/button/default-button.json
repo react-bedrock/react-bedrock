@@ -1,0 +1,63 @@
+{
+  "contained": {
+    "shadow": "var(--react-bedrock-theme-shadow-box-xs)",
+    "primary": {
+      "background-color": "var(--react-bedrock-theme-palette-primary-main)",
+      "text-color": "var(--react-bedrock-theme-palette-primary-contrast-text)",
+      "hover-background-color": "var(--react-bedrock-theme-palette-primary-light)"
+    },
+    "secondary": {
+      "background-color": "var(--react-bedrock-theme-palette-secondary-main)",
+      "text-color": "var(--react-bedrock-theme-palette-secondary-contrast-text)",
+      "hover-background-color": "var(--react-bedrock-theme-palette-secondary-light)"
+    },
+    "accent": {
+      "background-color": "var(--react-bedrock-theme-palette-accent-main)",
+      "text-color": "var(--react-bedrock-theme-palette-accent-contrast-text)",
+      "hover-background-color": "var(--react-bedrock-theme-palette-accent-light)"
+    }
+  },
+  "outlined": {
+    "shadow": "var(--react-bedrock-theme-shadow-box-xs)",
+    "border": "var(--react-bedrock-theme-border-thin)",
+    "primary": {
+      "border-color": "var(--react-bedrock-theme-palette-primary-main)",
+      "text-color": "var(--react-bedrock-theme-palette-primary-main)",
+      "hover": {
+        "border-color": "var(--react-bedrock-theme-palette-primary-light)",
+        "text-color": "var(--react-bedrock-theme-palette-primary-light)"
+      }
+    },
+    "secondary": {
+      "border-color": "var(--react-bedrock-theme-palette-secondary-main)",
+      "text-color": "var(--react-bedrock-theme-palette-secondary-main)",
+      "hover": {
+        "border-color": "var(--react-bedrock-theme-palette-secondary-light)",
+        "text-color": "var(--react-bedrock-theme-palette-secondary-light)"
+      }
+    },
+    "accent": {
+      "border-color": "var(--react-bedrock-theme-palette-accent-main)",
+      "text-color": "var(--react-bedrock-theme-palette-accent-main)",
+      "hover": {
+        "border-color": "var(--react-bedrock-theme-palette-accent-light)",
+        "text-color": "var(--react-bedrock-theme-palette-accent-light)"
+      }
+    }
+  },
+  "text": {
+    "shadow": "var(--react-bedrock-theme-shadow-box-none)",
+    "primary": {
+      "text-color": "var(--react-bedrock-theme-palette-primary-main)",
+      "hover-text-color": "var(--react-bedrock-theme-palette-primary-light)"
+    },
+    "secondary": {
+      "text-color": "var(--react-bedrock-theme-palette-secondary-main)",
+      "hover-text-color": "var(--react-bedrock-theme-palette-secondary-light)"
+    },
+    "accent": {
+      "text-color": "var(--react-bedrock-theme-palette-accent-main)",
+      "hover-text-color": "var(--react-bedrock-theme-palette-accent-light)"
+    }
+  }
+}

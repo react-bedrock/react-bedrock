@@ -1,0 +1,17 @@
+{
+  "corners": {
+    "rounded": "var(--react-bedrock-theme-shape-border-radius-sm)",
+    "squared": "var(--react-bedrock-theme-shape-border-radius-none)"
+  },
+  "shadow": {
+    "none": "var(--react-bedrock-theme-shadows-box-none)",
+    "xs": "var(--react-bedrock-theme-shadows-box-xs)",
+    "sm": "var(--react-bedrock-theme-shadows-box-sm)",
+    "md": "var(--react-bedrock-theme-shadows-box-md)",
+    "lg": "var(--react-bedrock-theme-shadows-box-lg)",
+    "xl": "var(--react-bedrock-theme-shadows-box-xl)",
+    "2xl": "var(--react-bedrock-theme-shadows-box-2xl)"
+  },
+  "padding": "1rem 2rem",
+  "outlined": "var(--react-bedrock-theme-borders-thin)"
+}
