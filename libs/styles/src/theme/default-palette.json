@@ -1,0 +1,606 @@
+{
+  "variables": [
+    {
+      "name": "$default-palette",
+      "value": "( 'light': ( 'primary': ( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%), 'dark': color.scale($blue-700, $lightness: -15%), 'contrast-text': white, 'test': ( 'depth': ( 'how': ( 'far': ( 'will': ( 'it': 'go?' ) ) ) ) ) ), 'secondary': ( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%), 'dark': color.scale($purple-500, $lightness: -15%), 'contrast-text': white, ), 'accent': ( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%), 'dark': color.scale($purple-500, $lightness: -15%), 'contrast-text': white, ), 'error': ( 'main': $red-700, 'light': color.scale($red-700, $lightness: 15%), 'dark': color.scale($red-700, $lightness: -15%), 'contrast-text': white, ), 'warning': ( 'main': $orange-700, 'light': color.scale($orange-700, $lightness: 15%), 'dark': color.scale($orange-700, $lightness: -15%), 'contrast-text': white, ), 'info': ( 'main': $blue-600, 'light': color.scale($blue-600, $lightness: 15%), 'dark': color.scale($blue-600, $lightness: -15%), 'contrast-text': white, ), 'success': ( 'main': $green-800, 'light': color.scale($green-800, $lightness: 15%), 'dark': color.scale($green-800, $lightness: -15%), 'contrast-text': white, ), 'text': ( 'primary': rgba(0, 0, 0, 0.87), 'secondary': rgba(0, 0, 0, 0.6), 'disabled': rgba(0, 0, 0, 0.38), ), 'background': ( 'paper': white, 'default': white, ), ), 'dark': ( 'primary': ( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%), 'dark': color.scale($blue-700, $lightness: -15%), 'contrast-text': white, ), 'secondary': ( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%), 'dark': color.scale($purple-500, $lightness: -15%), 'contrast-text': white, ), 'accent': ( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%), 'dark': color.scale($purple-500, $lightness: -15%), 'contrast-text': white, ), 'error': ( 'main': $red-700, 'light': color.scale($red-700, $lightness: 15%), 'dark': color.scale($red-700, $lightness: -15%), 'contrast-text': white, ), 'warning': ( 'main': $orange-700, 'light': color.scale($red-700, $lightness: 15%), 'dark': color.scale($red-700, $lightness: -15%), 'contrast-text': white, ), 'info': ( 'main': $blue-600, 'light': color.scale($blue-600, $lightness: 15%), 'dark': color.scale($blue-600, $lightness: -15%), 'contrast-text': white, ), 'success': ( 'main': $green-800, 'light': color.scale($green-800, $lightness: 15%), 'dark': color.scale($green-800, $lightness: -15%), 'contrast-text': white, ), 'text': ( 'primary': rgba(0, 0, 0, 0.87), 'secondary': rgba(0, 0, 0, 0.6), 'disabled': rgba(0, 0, 0, 0.38), ), 'background': ( 'paper': white, 'default': white, ), ), )",
+      "mapValue": [
+        {
+          "name": "light",
+          "value": "( 'primary': ( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "primary",
+              "value": "( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%)",
+              "mapValue": [
+                {
+                  "name": "main",
+                  "value": "$blue-700"
+                },
+                {
+                  "name": "light",
+                  "value": "color.scale"
+                },
+                {
+                  "name": "lightness",
+                  "value": "15%"
+                }
+              ]
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "test",
+          "value": "( 'depth': ( 'how': ( 'far': ( 'will': ( 'it': 'go?' )",
+          "mapValue": [
+            {
+              "name": "depth",
+              "value": "( 'how': ( 'far': ( 'will': ( 'it': 'go?' )",
+              "mapValue": [
+                {
+                  "name": "how",
+                  "value": "( 'far': ( 'will': ( 'it': 'go?' )",
+                  "mapValue": [
+                    {
+                      "name": "far",
+                      "value": "( 'will': ( 'it': 'go?' )",
+                      "mapValue": [
+                        {
+                          "name": "will",
+                          "value": "( 'it': 'go?' )",
+                          "mapValue": [
+                            {
+                              "name": "it",
+                              "value": "go?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "secondary",
+          "value": "( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$purple-500"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "accent",
+          "value": "( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$purple-500"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "error",
+          "value": "( 'main': $red-700, 'light': color.scale($red-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$red-700"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "warning",
+          "value": "( 'main': $orange-700, 'light': color.scale($orange-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$orange-700"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "info",
+          "value": "( 'main': $blue-600, 'light': color.scale($blue-600, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$blue-600"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "success",
+          "value": "( 'main': $green-800, 'light': color.scale($green-800, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$green-800"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "text",
+          "value": "( 'primary': rgba(0, 0, 0, 0.87)",
+          "mapValue": [
+            {
+              "name": "primary",
+              "value": "rgba(0, 0, 0, 0.87)"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "secondary",
+          "value": "rgba(0, 0, 0, 0.6)",
+          "compiledValue": "rgba(0, 0, 0, 0.6)"
+        },
+        {
+          "name": "disabled",
+          "value": "rgba(0, 0, 0, 0.38)",
+          "compiledValue": "rgba(0, 0, 0, 0.38)"
+        },
+        {
+          "name": "background",
+          "value": "( 'paper': white, 'default': white, )",
+          "mapValue": [
+            {
+              "name": "paper",
+              "value": "white"
+            },
+            {
+              "name": "default",
+              "value": "white"
+            }
+          ],
+          "compiledValue": "(\"paper\": white, \"default\": white)"
+        },
+        {
+          "name": "dark",
+          "value": "( 'primary': ( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "primary",
+              "value": "( 'main': $blue-700, 'light': color.scale($blue-700, $lightness: 15%)",
+              "mapValue": [
+                {
+                  "name": "main",
+                  "value": "$blue-700"
+                },
+                {
+                  "name": "light",
+                  "value": "color.scale"
+                },
+                {
+                  "name": "lightness",
+                  "value": "15%"
+                }
+              ]
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "secondary",
+          "value": "( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$purple-500"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "accent",
+          "value": "( 'main': $purple-500, 'light': color.scale($purple-500, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$purple-500"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "error",
+          "value": "( 'main': $red-700, 'light': color.scale($red-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$red-700"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "warning",
+          "value": "( 'main': $orange-700, 'light': color.scale($red-700, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$orange-700"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "info",
+          "value": "( 'main': $blue-600, 'light': color.scale($blue-600, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$blue-600"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "success",
+          "value": "( 'main': $green-800, 'light': color.scale($green-800, $lightness: 15%)",
+          "mapValue": [
+            {
+              "name": "main",
+              "value": "$green-800"
+            },
+            {
+              "name": "light",
+              "value": "color.scale"
+            },
+            {
+              "name": "lightness",
+              "value": "15%"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "dark",
+          "value": "color.scale",
+          "compiledValue": ""
+        },
+        {
+          "name": "lightness",
+          "value": "-15%",
+          "compiledValue": "-15%"
+        },
+        {
+          "name": "contrast-text",
+          "value": "white",
+          "compiledValue": "white"
+        },
+        {
+          "name": "text",
+          "value": "( 'primary': rgba(0, 0, 0, 0.87)",
+          "mapValue": [
+            {
+              "name": "primary",
+              "value": "rgba(0, 0, 0, 0.87)"
+            }
+          ],
+          "compiledValue": ""
+        },
+        {
+          "name": "secondary",
+          "value": "rgba(0, 0, 0, 0.6)",
+          "compiledValue": "rgba(0, 0, 0, 0.6)"
+        },
+        {
+          "name": "disabled",
+          "value": "rgba(0, 0, 0, 0.38)",
+          "compiledValue": "rgba(0, 0, 0, 0.38)"
+        },
+        {
+          "name": "background",
+          "value": "( 'paper': white, 'default': white, )",
+          "mapValue": [
+            {
+              "name": "paper",
+              "value": "white"
+            },
+            {
+              "name": "default",
+              "value": "white"
+            }
+          ],
+          "compiledValue": "(\"paper\": white, \"default\": white)"
+        }
+      ],
+      "compiledValue": "(\"light\": (\"primary\": (\"main\": #1976d2, \"light\": rgb(46.1170212766, 138.6223404255, 230.1329787234), \"dark\": rgb(21.25, 100.3, 178.5), \"contrast-text\": white, \"test\": (\"depth\": (\"how\": (\"far\": (\"will\": (\"it\": \"go?\")))))), \"secondary\": (\"main\": #9c27b0, \"light\": rgb(186.1895348837, 49.7348837209, 209.5151162791), \"dark\": rgb(132.6, 33.15, 149.6), \"contrast-text\": white), \"accent\": (\"main\": #9c27b0, \"light\": rgb(186.1895348837, 49.7348837209, 209.5151162791), \"dark\": rgb(132.6, 33.15, 149.6), \"contrast-text\": white), \"error\": (\"main\": #d32f2f, \"light\": rgb(217.6, 78.2, 78.2), \"dark\": rgb(181.0095238095, 38.2904761905, 38.2904761905), \"contrast-text\": white), \"warning\": (\"main\": #f57c00, \"light\": rgb(255, 143.7540816327, 29.75), \"dark\": rgb(208.25, 105.4, 0), \"contrast-text\": white), \"info\": (\"main\": #1e88e5, \"light\": rgb(63.75, 153.85, 232.9), \"dark\": rgb(22.8043824701, 115.7760956175, 197.3456175299), \"contrast-text\": white), \"success\": (\"main\": #2e7d32, \"light\": rgb(59.6789473684, 162.1710526316, 64.8684210526), \"dark\": rgb(39.1, 106.25, 42.5), \"contrast-text\": white), \"text\": (\"primary\": rgba(0, 0, 0, 0.87), \"secondary\": rgba(0, 0, 0, 0.6), \"disabled\": rgba(0, 0, 0, 0.38)), \"background\": (\"paper\": white, \"default\": white)), \"dark\": (\"primary\": (\"main\": #1976d2, \"light\": rgb(46.1170212766, 138.6223404255, 230.1329787234), \"dark\": rgb(21.25, 100.3, 178.5), \"contrast-text\": white), \"secondary\": (\"main\": #9c27b0, \"light\": rgb(186.1895348837, 49.7348837209, 209.5151162791), \"dark\": rgb(132.6, 33.15, 149.6), \"contrast-text\": white), \"accent\": (\"main\": #9c27b0, \"light\": rgb(186.1895348837, 49.7348837209, 209.5151162791), \"dark\": rgb(132.6, 33.15, 149.6), \"contrast-text\": white), \"error\": (\"main\": #d32f2f, \"light\": rgb(217.6, 78.2, 78.2), \"dark\": rgb(181.0095238095, 38.2904761905, 38.2904761905), \"contrast-text\": white), \"warning\": (\"main\": #f57c00, \"light\": rgb(217.6, 78.2, 78.2), \"dark\": rgb(181.0095238095, 38.2904761905, 38.2904761905), \"contrast-text\": white), \"info\": (\"main\": #1e88e5, \"light\": rgb(63.75, 153.85, 232.9), \"dark\": rgb(22.8043824701, 115.7760956175, 197.3456175299), \"contrast-text\": white), \"success\": (\"main\": #2e7d32, \"light\": rgb(59.6789473684, 162.1710526316, 64.8684210526), \"dark\": rgb(39.1, 106.25, 42.5), \"contrast-text\": white), \"text\": (\"primary\": rgba(0, 0, 0, 0.87), \"secondary\": rgba(0, 0, 0, 0.6), \"disabled\": rgba(0, 0, 0, 0.38)), \"background\": (\"paper\": white, \"default\": white)))"
+    }
+  ]
+}

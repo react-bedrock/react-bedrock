@@ -1,0 +1,21 @@
+{
+  "variables": [
+    {
+      "name": "$map-copy",
+      "value": "$map",
+      "compiledValue": ""
+    },
+    {
+      "name": "$map-container",
+      "value": "( $map-copy: $map )",
+      "mapValue": [
+        {
+          "name": "map-copy",
+          "value": "$map",
+          "compiledValue": "(\"palette\": (\"primary\": (\"main\": blue, \"light\": rgb(38.25, 38.25, 255), \"dark\": rgb(0, 0, 216.75), \"contrast-text\": white)))"
+        }
+      ],
+      "compiledValue": "((\"palette\": (\"primary\": (\"main\": blue, \"light\": rgb(38.25, 38.25, 255), \"dark\": rgb(0, 0, 216.75), \"contrast-text\": white))): (\"palette\": (\"primary\": (\"main\": blue, \"light\": rgb(38.25, 38.25, 255), \"dark\": rgb(0, 0, 216.75), \"contrast-text\": white))))"
+    }
+  ]
+}

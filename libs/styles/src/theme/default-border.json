@@ -1,0 +1,16 @@
+{
+  "variables": [
+    {
+      "name": "$default-border",
+      "value": "( 'thin': '1px solid', )",
+      "mapValue": [
+        {
+          "name": "thin",
+          "value": "1px solid",
+          "compiledValue": "1px solid"
+        }
+      ],
+      "compiledValue": "(\"thin\": \"1px solid\")"
+    }
+  ]
+}

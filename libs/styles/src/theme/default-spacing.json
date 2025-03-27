@@ -1,0 +1,9 @@
+{
+  "variables": [
+    {
+      "name": "$default-spacing",
+      "value": "()",
+      "compiledValue": ""
+    }
+  ]
+}

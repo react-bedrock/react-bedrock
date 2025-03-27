@@ -1,0 +1,12 @@
+@use 'sass:color';
+
+$map: (
+  'palette': (
+    'primary': (
+      'main': blue,
+      'light': color.scale(blue, $lightness: 15%),
+      'dark': color.scale(blue, $lightness: -15%),
+      'contrast-text': white,
+    )
+  )
+);

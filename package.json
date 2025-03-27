@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx nx run styleguide:serve --dev=true",
-    "parse-scss": "sass-export C:\\Repositories\\react-bedrock\\libs\\styles\\src\\theme\\_default-typography.scss -o c:\\Repositories\\react-bedrock\\libs\\styles\\src\\theme\\_default-typography.json"
+    "parse-scss": "sass-export C:\\Repositories\\react-bedrock\\libs\\styles\\src\\theme\\test.scss -d C:\\Repositories\\react-bedrock\\libs\\styles\\src\\theme -o c:\\Repositories\\react-bedrock\\libs\\styles\\src\\theme\\test.json"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,21 @@
+{
+  "variables": [
+    {
+      "name": "$map-copy",
+      "value": "$default-palette",
+      "compiledValue": ""
+    },
+    {
+      "name": "$map-container",
+      "value": "( $map-copy: $map )",
+      "mapValue": [
+        {
+          "name": "map-copy",
+          "value": "$map",
+          "compiledValue": ""
+        }
+      ],
+      "compiledValue": ""
+    }
+  ]
+}
