@@ -1,6 +1,6 @@
 @use 'sass:map';
-@import './default-html-elements';
-@import '../utility/map-to-styles';
+@use './default-html-elements';
+@use '../utility/map-to-styles';
 
 $html-elements: ();
 

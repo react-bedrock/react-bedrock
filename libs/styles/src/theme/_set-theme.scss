@@ -1,6 +1,6 @@
 @use 'sass:map';
-@import './default-theme';
-@import '../utility/nested-map-to-css-vars';
+@use './default-theme';
+@use '../utility/nested-map-to-css-vars';
 
 $theme: ();
 

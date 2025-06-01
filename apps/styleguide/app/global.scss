@@ -1,6 +1,6 @@
-@import "./theme";
-@import "../../../libs/styles/src/components/set-components";
-@import "../../../libs/styles/src/html-elements/set-html-elements";
+@use "./theme";
+@use "../../../libs/styles/src/components/set-components";
+@use "../../../libs/styles/src/html-elements/set-html-elements";
 
 @include set-components();
 @include set-html-elements();
