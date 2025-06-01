@@ -1,5 +1,5 @@
 @use 'sass:color';
-@use '../colors/index';
+@use '../colors/index' as *;
 
 $default-palette: (
   'light': (
