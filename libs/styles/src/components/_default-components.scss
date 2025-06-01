@@ -1,5 +1,5 @@
-@use './button/default-button';
-@use './paper/default-paper';
+@use './button/default-button' as *;
+@use './paper/default-paper' as *;
 
 $default-components: (
   'button': $default-button,

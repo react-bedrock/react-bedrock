@@ -1,6 +1,6 @@
 @use 'sass:map';
-@use './default-components';
-@use '../utility/nested-map-to-css-vars';
+@use './default-components' as *;
+@use '../utility/nested-map-to-css-vars' as *;
 
 @mixin set-components($components-config: ()) {
   $components: map.deep-merge($default-components, $components-config);

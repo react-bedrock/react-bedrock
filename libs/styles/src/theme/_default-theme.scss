@@ -1,10 +1,10 @@
-@use './default-palette';
-@use './default-typography';
-@use './default-spacing';
-@use './default-breakpoint';
-@use './default-border';
-@use './default-shadow';
-@use './default-shape';
+@use './default-palette' as *;
+@use './default-typography' as *;
+@use './default-spacing' as *;
+@use './default-breakpoint' as *;
+@use './default-border' as *;
+@use './default-shadow' as *;
+@use './default-shape' as *;
 
 $default-theme: (
   'palette': $default-palette,
